@@ -1,0 +1,62 @@
+.container{
+  height: 100vh;
+}
+.user{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 250rpx;
+  padding-left: 50rpx;
+  box-sizing: border-box;
+  background: #576b95;
+}
+.user .user-avatar{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 30rpx;
+}
+.user-avatar image{
+  width: 100%;
+}
+.user .user-name{
+  font-weight: bold;
+  color: #fff;
+}
+.user-name .login-btn{
+  padding: 0;
+  background: none;
+  font-size: 24rpx;
+  color: #fff;
+}
+button::after{
+  content: "";
+  border: 0;
+}
+
+.more{
+  padding: 0 20rpx;
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #eee;
+  line-height: 80rpx;
+}
+.item .item-arrow{
+  color: #666;
+}
+
+.sign-out{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sign-out view{
+  padding: 0 30rpx;
+  border: 2rpx solid #eee;
+  border-radius: 35rpx;
+  line-height: 70rpx;
+}

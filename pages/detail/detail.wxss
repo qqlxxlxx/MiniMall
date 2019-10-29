@@ -1,0 +1,70 @@
+.title{
+  display: block;
+  text-align: center;
+  font-size: 60rpx;
+  font-weight: 500;
+  margin: 10rpx 0;
+}
+
+swiper{
+  width: 96%;
+  height: 720rpx;
+  margin: 0 16rpx; 
+}
+swiper-item{
+  width: 100%;
+  padding: 60rpx;
+  box-sizing: border-box
+}
+swiper video, swiper image{
+  width: 100%;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 92rpx;
+}
+.info .price{
+  margin-bottom: 20rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  background: #ff3950;
+  font-size: 40rpx;
+  color: #fff;
+  line-height: 80rpx;
+}
+.info .name{
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  color: #000;
+  font-weight: bold;
+}
+
+
+.descript{
+  margin-bottom: 92rpx;
+}
+.descript image{
+  width: 100%;
+}
+
+
+.bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background: #ff3950;
+}
+.bottom button{
+  width: 50%;
+  background: #ff3950;
+  color: #fff;
+}
+
+icon{
+  vertical-align: middle;
+}

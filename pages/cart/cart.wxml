@@ -1,0 +1,35 @@
+<view wx:if="{{!productList.length==0}}">
+  <view class="wrap">
+    <view class="product" wx:for="{{productList}}" wx:key="item.id">
+      <checkbox-group id="{{item.id}}" bindchange="switchCheck">
+        <checkbox value="{{item.id}}" checked="{{item.isCheck}}"></checkbox>
+      </checkbox-group>
+      <view class="wrap-img">
+        <image src="{{item.src}}" mode="widthFix"></image>
+      </view>
+      <view class="info">
+        <text class="name">{{item.name}}</text>
+        <text class="price">￥{{item.price}}</text>
+      </view>
+      <view class="btn">
+        <view class="dec" bindtap="dec" id="{{index}}" data-quantity="{{item.count.quantity}}">-</view>
+        <view class="count">{{item.count.quantity}}</view>
+        <view class="add" bindtap="add" id="{{index}}" data-quantity="{{item.count.quantity}}">+</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="pay">
+    <checkbox-group bindchange="checkAll">
+      <checkbox value="checkAll" checked="{{isCheckAll}}"></checkbox>全选
+    </checkbox-group>
+    <view>
+      合计:<text>￥{{price}}</text>
+    </view>
+    <button bindtap="goBuy">去付款</button>
+  </view>
+</view>
+
+<view wx:else>
+  购物车为空
+</view>

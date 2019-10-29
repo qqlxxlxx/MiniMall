@@ -1,0 +1,32 @@
+<view>
+  <swiper indicator-dots>
+    <swiper-item>
+      <image src="https://res.vmallres.com/pimages//product/6901443353422/800_800_F5EEA3B569DFEF651FF269459E21D4EC19E20D7F374A9222mp.png" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://res.vmallres.com/pimages//product/6901443353422/group//800_800_4147DDE9C45E009755C84F8FE2560AF4B51F193E44C2E9A9.png" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://res.vmallres.com/pimages//product/6901443353422/group//800_800_F72FBFE03B7932F18518236AAEC4BBD0810A5C93399F4F84.png" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class="info">
+  <text class="price">￥{{productInfo.price}}</text>
+  <text class="name">{{productInfo.name}}</text>
+</view>
+
+<text class="title">产品详细介绍</text>
+<view class="descript">
+  <image src="https://res.vmallres.com/pimages/detailImg/2019/10/22/5901D6963243164F90AD54BD181AB0B40CFD9B1FAAFFF17C.jpg" mode="widthFix"></image>
+  <image src="https://res.vmallres.com/pimages/detailImg/2019/10/22/F686E070DD9C3D342C62087E7F0D21E1AF738DAE09BB1C89.jpg" mode="widthFix"></image>
+  <image src="https://res.vmallres.com/pimages/detailImg/2019/10/22/689F14C0956469561CBBE96C2243B5ED72E7B195A58B9CA7.jpg" mode="widthFix"></image>
+</view>
+<view class="bottom">
+  <button bindtap="addCart" id="{{productInfo.id}}">
+    添加到购物车
+    <icon type="success" color="#fff" size="20" wx:if="{{isAdd}}"></icon>
+  </button>
+  <button bindtap="buy">立即购买</button>
+</view>
